@@ -1,0 +1,12 @@
+Aby używać przegądarki potrzebne są najpierw dane do stworzenia silnika.
+Należy wykonać co następuje:
+1. pobrać odpowiednią liczbę stron z użyciem skryptu "get_articles.py",
+    zapisane zostaną w katalogu o nazwię będącej liczbą całkowitą, które będzie się znajdowała
+    w katalogu "gettingArticles/wikipedia_repos/",
+    dwa osobne katalogi z pobranymi stronami można połączyć w jeden z użyciem "utils/merge_wikipedia_repos.py"
+2. utworzyć listę tytułów z użyciem "make_titles_files.py" z argumentem - ścieżką do odpowiedniego podfolderu "wikipedia_repos",
+3. dokonać obliczeń dla pobranego zbioru z użyciem skryptu "parsing/parsing.py", w którym należy zmienić odpowiednie argumenty,
+4. obliczyć SVD dla wybranych stopni "K" z użyciem skryptu "parsing/svd/calc_svds.py"
+    dla wybranego zbioru z katalogu znajdującego się w folderze "parsing/parsed"
+
+5. można uruchomić program main.py
